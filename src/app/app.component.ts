@@ -38,14 +38,17 @@ export class AppComponent implements OnInit {
   }
 
   public setResults(): Observable<any> | void {
+    this.photos = [];
     this.getResults().subscribe(result => {
       console.log(result);
       const array = [];
-      for (let i = 0; i < result.length; i++) {
-        this.photos = result[i];
-        array.push(this.photos);
-        console.log(this.photos);
-        this.photos = array;
+      if  (result !== []) {
+        for (let i = 0; i < result.length; i++) {
+          this.photos = result[i];
+          array.push(this.photos);
+          console.log(this.photos);
+          this.photos = array;
+        }
       }
     });
   }
