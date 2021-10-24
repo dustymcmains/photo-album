@@ -6,7 +6,7 @@ Please clone the 'dev' branch and navigate to the project in a terminal.
 
 ## Installing NPM
 
-Run 'npm install' to install node package manager. This must be done before serving the project.
+Run `npm install` to install node package manager. This must be done before serving the project.
 
 ## Development server
 
