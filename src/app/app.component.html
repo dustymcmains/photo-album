@@ -1,16 +1,26 @@
 <section class="flex-column flex-start margin-top width-600">
   <section class="flex-column margin-left margin-right">
     <mat-form-field appearance="outline" class="flex-row flex-center">
-      <mat-label>Photo ID</mat-label>
-      <input matInput aria-describedby="search-text"
-             (keyup)="setResults()"
-           [(ngModel)]="searchText"
-           autofocus>
+      <mat-label>Album ID</mat-label>
+      <input
+        matInput
+        aria-describedby="search-text"
+        (keyup)="setResults()"
+        [(ngModel)]="searchText"
+        type="number"
+        autofocus
+      />
     </mat-form-field>
-    <button class="flex-row flex-center" mat-button color="primary" (click)="setResults()">
+    <button
+      class="flex-row flex-center"
+      mat-button
+      color="primary"
+      (click)="setResults()"
+    >
       Search
     </button>
   </section>
+
   <section class="margin-top margin-bottom">
     <mat-list *ngFor="let photo of photos | keyvalue; let i = index">
       <mat-list-item class="list-group-item">
@@ -19,4 +29,3 @@
     </mat-list>
   </section>
 </section>
-
