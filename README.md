@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-Please clone the 'dev' branch and navigate to the project in a terminal.
+Please clone the 'dev' branch and navigate to the project in a terminal. Use the development server to view the app.
 
 ## Installing NPM
 
-Run `npm install` to install node package manager. This must be done before serving the project.
+Run `npm install` to install node package manager. This must be done before serving the app.
 
 ## Development server
 
