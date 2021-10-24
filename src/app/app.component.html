@@ -22,9 +22,9 @@
   </section>
 
   <section class="margin-top margin-bottom">
-    <mat-list *ngFor="let photo of photos | keyvalue; let i = index">
+    <mat-list *ngFor="let photo of photos">
       <mat-list-item class="list-group-item">
-        [{{ photo.value.id }}] {{ photo.value.title }}
+        [{{ photo.id }}] {{ photo.title }}
       </mat-list-item>
     </mat-list>
   </section>
